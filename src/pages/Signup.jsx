@@ -39,7 +39,7 @@ const SignUp = () => {
               className="shadow p-3 rounded-md outline-none w-[82%]"
             />
           </div>
-          <div className="flex flex-col basis-[45%]">
+          <div className="flex flex-col basis-[45%] mr-10">
             <label className="text-[#404B7C] font-normal text-sm my-2">
               Nickname
             </label>
@@ -67,7 +67,7 @@ const SignUp = () => {
         <button className="my-6 p-3 bg-[#6B8418] text-white rounded-xl w-[30%]">
           Save & Continue
         </button>
-        <h2>
+        <h2 className="text-[#9A9A9A] text-sm">
           Already have an account?{" "}
           <Link
             className="text-[#6B8418] cursor-pointer underline underline-offset-2"
