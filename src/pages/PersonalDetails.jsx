@@ -18,7 +18,7 @@ const PersonalDetails = () => {
         <input
           type="text"
           placeholder="Flat no / House no"
-          className="p-3 rounded-md"
+          className="p-3 rounded-md outline-none"
         />
         <label className="text-[#404B7C] font-normal text-sm my-2">
           Line 2
@@ -26,49 +26,49 @@ const PersonalDetails = () => {
         <input
           type="text"
           placeholder="Street name / Building no / Plot no"
-          className="p-3 rounded-md"
+          className="p-3 rounded-md outline-none"
         />
         <div className="flex flex-row justify-between my-2">
-          <div className="flex flex-col">
+          <div className="flex flex-col basis-[45%]">
             <label className="text-[#404B7C] font-normal text-sm my-2">
               City
             </label>
             <input
               type="text"
               placeholder="Enter city name"
-              className="p-3 rounded-md"
+              className="p-3 rounded-md outline-none"
             />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col basis-[45%]">
             <label className="text-[#404B7C] font-normal text-sm my-2">
               Region
             </label>
             <input
               type="text"
               placeholder="Flat no / House no"
-              className="p-3 rounded-md"
+              className="p-3 rounded-md outline-none"
             />
           </div>
         </div>
         <div className="flex flex-row justify-between my-2">
-          <div className="flex flex-col">
+          <div className="flex flex-col basis-[45%]">
             <label className="text-[#404B7C] font-normal text-sm my-2">
               Country
             </label>
             <input
               type="text"
               placeholder="Enter country name"
-              className="p-3 rounded-md"
+              className="p-3 rounded-md outline-none"
             />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col basis-[45%]">
             <label className="text-[#404B7C] font-normal text-sm my-2">
               Postal/Zip Code
             </label>
             <input
               type="text"
               placeholder="Enter postal / zip code"
-              className="p-3 rounded-md outline outline-[#6B8418]"
+              className="p-3 rounded-md outline-none"
             />
           </div>
         </div>
