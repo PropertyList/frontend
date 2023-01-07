@@ -496,7 +496,7 @@ const Login = () => {
         </button>
         </div>
         <button className="my-6 p-3 bg-[#6B8418] text-white rounded-xl w-[30%]">
-          Save & Continue
+          Login
         </button>
         <h2>
           Don't have an account? <span className="text-[#6B8418]">Sign up</span>
