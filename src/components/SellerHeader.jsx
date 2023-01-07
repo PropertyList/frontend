@@ -7,7 +7,7 @@ const SellerHeader = (props) => {
     >
       <div>
         <h2 className="text-xl font-semibold mx-10 my-auto mt-3">
-          BuyFraction
+          SplitEstate
         </h2>
       </div>
       <div>

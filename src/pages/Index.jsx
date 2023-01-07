@@ -8,6 +8,7 @@ import NotFound from "./404";
 import BuyOptions from "./BuyOptions";
 import Seller from "./Seller";
 import ListProperty from "./ListProperty";
+import AllProperties from "./AllProperties";
 const Index = () => {
   return (
     <BrowserRouter>
@@ -21,6 +22,7 @@ const Index = () => {
         <Route path="/seller" element={<Seller />} />
         <Route path="/list" element={<ListProperty />} />
         <Route path="/buyoptions" element={<BuyOptions />} />
+        <Route path="/properties" element={<AllProperties />} />
       </Routes>
     </BrowserRouter>
   );
