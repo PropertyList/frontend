@@ -1,8 +1,10 @@
 import React from "react";
 import CardImg from "../assets/kycImg.svg";
-import { Link } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+  const navigate = useNavigate();
+  let { id } = useParams();
   return (
     <div className="flex flex-row p-5 h-[100vh]">
       <div className=" rounded-sm basis-[30%] bg-[#6B8418] text-white flex flex-col p-5 leading-6">
@@ -21,7 +23,7 @@ const SignUp = () => {
       </div>
       <form className="basis-[70%] flex flex-col px-24 py-10 flex-start">
         <h2 className="text-[#0D1D54] font-semibold text-2xl my-5">
-          Create an account
+          Create a {id} account
         </h2>
         <p className="text-[#404B7C] font-[500] text-sm mb-2">
           {" "}
@@ -64,14 +66,20 @@ const SignUp = () => {
           placeholder="shh.. sceret"
           className="shadow p-3 rounded-md outline-none w-[62%] focus:ring-1 ring-black"
         />
-        <button className="my-6 p-3 bg-[#6B8418] text-white rounded-xl w-[30%]">
+        <button
+          className="my-6 p-3 bg-[#6B8418] text-white rounded-xl w-[30%]"
+          onClick={(e) => {
+            e.preventDefault();
+            navigate(`/kyc/${id}`);
+          }}
+        >
           Save & Continue
         </button>
         <h2 className="text-[#9A9A9A] text-sm">
           Already have an account?{" "}
           <Link
             className="text-[#6B8418] cursor-pointer underline underline-offset-2"
-            to="/login"
+            to={`/login/${id}`}
           >
             Login
           </Link>

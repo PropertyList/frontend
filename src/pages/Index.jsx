@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Home";
+import Home from "./MainLanding";
 import PersonalDetails from "./PersonalDetails";
 import SignUp from "./Signup";
 import Login from "./Login";
@@ -11,9 +11,11 @@ const Index = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/kyc" element={<PersonalDetails />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/kyc" element={<PersonalDetails />} /> */}
+        <Route path="/kyc/:id" element={<PersonalDetails />} />
+        {/* <Route path="/signup" element={<SignUp />} /> */}
+        <Route path="/signup/:id" element={<SignUp />} />
+        <Route path="/login/:id" element={<Login />} />
         <Route path="/*" element={<NotFound />} />
         <Route path="/buyoptions" element={<BuyOptions />} />
       </Routes>

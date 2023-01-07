@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const IdentityDetails = (props) => {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-row p-5 h-[100vh]">
       <div className=" rounded-sm basis-[30%] bg-[#fff] ">
@@ -124,6 +126,7 @@ const IdentityDetails = (props) => {
         <button
           className="my-6 p-3 bg-[#6B8418] text-white rounded-xl w-[30%]"
           onClick={() => {
+            navigate(`/login/${props.userid}`);
             props.setShowIdentityDetails(false);
           }}
         >

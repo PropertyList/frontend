@@ -100,11 +100,11 @@ const AddressDetails = (props) => {
           </div>
           <div className="flex flex-col basis-[45%]">
             <label className="text-[#404B7C] font-normal text-sm my-2">
-              Region
+              Landmark
             </label>
             <input
               type="text"
-              placeholder="Flat no / House no"
+              placeholder="Enter landmark"
               className="shadow p-3 rounded-md outline-none"
             />
           </div>
