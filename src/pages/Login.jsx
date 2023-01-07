@@ -19,6 +19,8 @@ const Login = () => {
           Thank you for get back to CKYC.
         </p>
         <div className="my-4"></div>
+        <div className="flex flex-row justify-between my-2">
+        <div className="flex flex-col basis-[55%]">
         <label className="text-[#404B7C] font-normal text-sm my-2">Email</label>
         <br></br>
         <input
@@ -26,7 +28,11 @@ const Login = () => {
           placeholder="Enter email address"
           className="p-3 rounded-md "
         />
+        </div>
+        </div>
         <div className="my-3"></div>
+        <div className="flex flex-row justify-between my-2">
+        <div className="flex flex-col basis-[55%]">
         <label className="text-[#404B7C] font-normal text-sm my-2">
           Password
         </label>
@@ -36,11 +42,14 @@ const Login = () => {
           placeholder="Enter password"
           className="p-3 rounded-md"
         />
-        <div className="my-3"></div>
-        <span className="text-[#6B8418]">Forget Password?</span>
+        </div>
+        </div>
+        <div className="my-2"></div>
+        <span className="text-[#6B8418] text-right">Forget Password?</span>
         <div className="my-3"></div>
         <span className="justify-center text-center ">Or continue with</span>
         <div className="my-2"></div>
+        <div className="flex flex-row justify-center">
         <button
           type="button"
           class="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2"
@@ -485,8 +494,9 @@ const Login = () => {
           </svg> */}
           Connect with MetaMask
         </button>
+        </div>
         <button className="my-6 p-3 bg-[#6B8418] text-white rounded-xl w-[30%]">
-          Save & Continue
+          Login
         </button>
         <h2>
           Don't have an account? <span className="text-[#6B8418]">Sign up</span>
