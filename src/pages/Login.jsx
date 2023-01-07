@@ -3,8 +3,12 @@ import LoginImg from "../assets/loginImg.svg";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import Metamask from "../assets/metamask.svg";
 import Coinbase from "../assets/Coinbase.svg";
+import { useAuth0 } from "@auth0/auth0-react";
+import Google from "../assets/google.svg";
+import Github from "../assets/github.svg";
 
 const Login = () => {
+  const { loginWithRedirect } = useAuth0();
   const navigate = useNavigate();
   let { id } = useParams();
   return (
@@ -46,6 +50,21 @@ const Login = () => {
         <h2 className="text-[#404B7C] font-normal text-sm my-2 w-[62%] text-center">
           Or continue with
         </h2>
+        <div className="flex flex-row ">
+          <button className="bg-white rounded-sm hover:ring-1 ring-black p-3 shadow w-[30%]" onClick={() => loginWithRedirect()}>
+            <div className="flex flex-row ">
+              <img className="w-9" src={Google} alt="Google-img" />
+              <h2 className="m-auto ">Continue with Google</h2>
+            </div>
+          </button>
+          <button className="bg-white rounded-sm hover:ring-1 ring-black p-3 shadow w-[30%] ml-2">
+            <div className="flex flex-row ">
+              <img className="w-9" src={Github} alt="Github-img" />
+              <h2 className="m-auto">Continue with GitHub</h2>
+            </div>
+          </button>
+        </div>
+        <h2 className="text-[#404B7C] font-normal text-sm my-2 w-[62%] text-center"></h2>
         <div className="flex flex-row ">
           <button className="bg-white rounded-sm hover:ring-1 ring-black p-3 shadow w-[30%]">
             <div className="flex flex-row ">
