@@ -57,7 +57,7 @@ const SignUp = () => {
         <button className="my-6 p-3 bg-[#6B8418] text-white rounded-xl w-[30%]">
           Save & Continue
         </button>
-        <h2>Already have an account? Log in</h2>
+        <h2>Already have an account? <span className="text-[#6B8418]">Login</span></h2>
       </form>
     </div>
   );
