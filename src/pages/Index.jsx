@@ -4,6 +4,7 @@ import Home from "./Home";
 import PersonalDetails from "./PersonalDetails";
 import SignUp from "./Signup";
 import Login from "./Login";
+import NotFound from "./404";
 const Index = () => {
   return (
     <BrowserRouter>
@@ -11,7 +12,8 @@ const Index = () => {
         <Route path="/" element={<Home />} />
         <Route path="/kyc" element={<PersonalDetails />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login/>} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
