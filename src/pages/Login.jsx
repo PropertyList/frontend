@@ -1,9 +1,10 @@
 import React from "react";
 import LoginImg from "../assets/loginImg.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Metamask from "../assets/metamask.svg";
 import Coinbase from "../assets/Coinbase.svg";
 const Login = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-row p-5 h-[100vh]">
       <div className=" rounded-sm basis-[30%] bg-[#6B8418] text-white flex flex-col p-5 leading-6 justify-between">
@@ -46,18 +47,23 @@ const Login = () => {
         <div className="flex flex-row ">
           <button className="bg-white rounded-sm hover:ring-1 ring-black p-3 shadow w-[30%]">
             <div className="flex flex-row ">
-              <img className="w-9 mx-2" src={Metamask} alt="Metamask-img" />
+              <img className="w-9" src={Metamask} alt="Metamask-img" />
               <h2 className="m-auto ">Connect with Metamask</h2>
             </div>
           </button>
           <button className="bg-white rounded-sm hover:ring-1 ring-black p-3 shadow w-[30%] ml-2">
             <div className="flex flex-row ">
-              <img className="w-9 mx-2" src={Coinbase} alt="Coinbase-img" />
+              <img className="w-9" src={Coinbase} alt="Coinbase-img" />
               <h2 className="m-auto">Connect with Coinbase</h2>
             </div>
           </button>
         </div>
-        <button className="my-6 p-3 bg-[#6B8418] text-white rounded-xl w-[62%]">
+        <button
+          className="my-6 p-3 bg-[#6B8418] text-white rounded-xl w-[62%]"
+          onClick={() => {
+            navigate("/buyoptions");
+          }}
+        >
           Login
         </button>
         <h2 className="text-[#9A9A9A] text-sm">
