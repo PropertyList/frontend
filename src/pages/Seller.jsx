@@ -2,7 +2,9 @@ import React from "react";
 import Header from "../components/SellerHeader";
 import ProfilePic from "../assets/profileimg.png";
 import Listings from "../components/MyListings";
+import { useNavigate } from "react-router-dom";
 const Seller = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <Header img={ProfilePic} />
@@ -27,7 +29,12 @@ const Seller = () => {
             <h2 className="text-[#0D1D54] font-semibold text-xl p-3 ">
               Your Listings
             </h2>
-            <button className=" p-3 bg-[#6B8418] text-white rounded-xl mr-5">
+            <button
+              className=" p-3 bg-[#6B8418] text-white rounded-xl mr-5"
+              onClick={() => {
+                navigate("/list");
+              }}
+            >
               Create Listings +
             </button>
           </div>
