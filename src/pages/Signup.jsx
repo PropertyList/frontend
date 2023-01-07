@@ -6,11 +6,11 @@ const SignUp = () => {
   return (
     <div className="flex flex-row p-5 h-[100vh]">
       <div className=" rounded-sm basis-[30%] bg-[#6B8418] text-white flex flex-col p-5 leading-6">
-        <div className="w-[60%]">
-          <h2 className="font-semibold text-xl mb-5 mt-32">
+        <div className="w-[65%]">
+          <h2 className="font-[550] text-3xl mb-5 mt-32">
             Few click away on KYC.
           </h2>
-          <p>Start you KYC in minutes save time & money</p>
+          <p className="text-sm">Start you KYC in minutes save time & money</p>
         </div>
         <img
           className="
