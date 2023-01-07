@@ -20,7 +20,7 @@ const SignUp = () => {
         />
       </div>
       <form className="basis-[70%] flex flex-col px-24 py-10 flex-start">
-        <h2 className="text-[#0D1D54] font-semibold text-xl my-5">
+        <h2 className="text-[#0D1D54] font-semibold text-2xl my-5">
           Create an account
         </h2>
         <p className="text-[#404B7C] font-[500] text-sm mb-2">
