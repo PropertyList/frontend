@@ -1,10 +1,12 @@
 import React from "react";
 import LoginImg from "../assets/loginImg.svg";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import Metamask from "../assets/metamask.svg";
 import Coinbase from "../assets/Coinbase.svg";
+
 const Login = () => {
   const navigate = useNavigate();
+  let { id } = useParams();
   return (
     <div className="flex flex-row p-5 h-[100vh]">
       <div className=" rounded-sm basis-[30%] bg-[#6B8418] text-white flex flex-col p-5 leading-6 justify-between">
@@ -60,8 +62,13 @@ const Login = () => {
         </div>
         <button
           className="my-6 p-3 bg-[#6B8418] text-white rounded-xl w-[62%]"
-          onClick={() => {
-            navigate("/buyoptions");
+          onClick={(e) => {
+            e.preventDefault();
+            if (id === "seller") {
+              navigate("/seller");
+            } else {
+              navigate("/buyoptions");
+            }
           }}
         >
           Login
