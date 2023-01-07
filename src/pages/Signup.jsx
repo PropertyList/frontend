@@ -14,7 +14,7 @@ const SignUp = () => {
         {
           headers: {
             "apy-token":
-              "APT0sOYQKmgDDptQNnQatsLL9on0WG9pHawAFQ5ayIRBonGj3slCWxc",
+              process.env.REACT_APP_APY_TOKEN,
           },
         }
       )
@@ -79,6 +79,7 @@ const SignUp = () => {
             className="p-3 rounded-md outline-none shadow  w-[62%] focus:ring-1 ring-black"
           />
           <button
+            className="text-[#9A9A9A] text-sm mx-2"
             onClick={(e) => {
               e.preventDefault();
               handleEmailVerification();
