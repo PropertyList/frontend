@@ -1,17 +1,24 @@
 import React from "react";
+import CardImg from "../assets/Get started 1.svg";
 
 const Login = () => {
   return (
     <div className="flex flex-row p-5 h-[100vh]">
       <div className=" rounded-sm basis-[30%] bg-[#6B8418] ">
         <div>
-          <h2 className="text-white text-4xl p-8 mt-32">
+          <h2 className="text-white text-4xl p-8 mt-28">
             Few click away on KYC.
           </h2>
           <p className="text-white pl-8 pr-12 mr-10">
             Start your KYC in minutes. save time and money
           </p>
         </div>
+        <img
+          className="
+        -mt-6"
+          src={CardImg}
+          alt="Img"
+        />
       </div>
       <form className="basis-[70%] flex flex-col px-24 py-10 flex-start">
         <h2 className="text-[#0D1D54] font-semibold text-2xl my-5">Login ✌️</h2>
