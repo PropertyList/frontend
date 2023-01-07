@@ -11,7 +11,7 @@ const Login = () => {
           <h2 className="font-[550] text-3xl mb-5">One key at a time.</h2>
           <p className="text-sm">Your profit our promise.</p>
         </div>
-        <img className=" " src={LoginImg} alt="Img" />
+        <img className="w-60 flex-end" src={LoginImg} alt="Img" />
       </div>
       <form className="basis-[70%] flex flex-col px-24 py-10 flex-start">
         <h2 className="text-[#0D1D54] font-semibold text-2xl mt-5 mb-3">
@@ -46,14 +46,14 @@ const Login = () => {
         <div className="flex flex-row ">
           <button className="bg-white rounded-sm hover:ring-1 ring-black p-3 shadow w-[30%]">
             <div className="flex flex-row ">
-              <img className="w-9" src={Metamask} alt="Metamask-img" />
-              <h2>Connect with Metamask</h2>
+              <img className="w-9 mx-2" src={Metamask} alt="Metamask-img" />
+              <h2 className="m-auto ">Connect with Metamask</h2>
             </div>
           </button>
           <button className="bg-white rounded-sm hover:ring-1 ring-black p-3 shadow w-[30%] ml-2">
             <div className="flex flex-row ">
-              <img className="w-9" src={Coinbase} alt="Coinbase-img" />
-              <h2>Connect with Coinbase</h2>
+              <img className="w-9 mx-2" src={Coinbase} alt="Coinbase-img" />
+              <h2 className="m-auto">Connect with Coinbase</h2>
             </div>
           </button>
         </div>
