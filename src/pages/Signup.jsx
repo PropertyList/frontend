@@ -77,6 +77,15 @@ const SignUp = () => {
           </Link>
         </h2>
       </form>
+      <h2 className="absolute top-0 right-0 text-[#9A9A9A] text-sm w-fit mt-5 mr-5">
+        Having trobule?{" "}
+        <Link
+          className="text-[#6B8418] cursor-pointer underline underline-offset-2"
+          to="/help"
+        >
+          Get Help
+        </Link>
+      </h2>
     </div>
   );
 };
