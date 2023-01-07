@@ -36,7 +36,7 @@ const SignUp = () => {
             <input
               type="text"
               placeholder="Enter full name"
-              className="shadow p-3 rounded-md outline-none w-[82%]"
+              className="shadow p-3 rounded-md outline-none w-[82%] focus:ring-1 ring-black"
             />
           </div>
           <div className="flex flex-col basis-[45%] mr-10">
@@ -46,7 +46,7 @@ const SignUp = () => {
             <input
               type="text"
               placeholder="Enter nickname"
-              className="shadow p-3 rounded-md outline-none w-[82%]"
+              className="shadow p-3 rounded-md outline-none w-[82%] focus:ring-1 ring-black"
             />
           </div>
         </div>
@@ -54,15 +54,15 @@ const SignUp = () => {
         <input
           type="text"
           placeholder="Your@email"
-          className="p-3 rounded-md outline-none shadow  w-[62%]"
+          className="p-3 rounded-md outline-none shadow  w-[62%] focus:ring-1 ring-black"
         />
         <label className="text-[#404B7C] font-normal text-sm my-2">
           Password
         </label>
         <input
           type="password"
-          placeholder="shhh sceret"
-          className="shadow p-3 rounded-md outline-none w-[62%]"
+          placeholder="shh.. sceret"
+          className="shadow p-3 rounded-md outline-none w-[62%] focus:ring-1 ring-black"
         />
         <button className="my-6 p-3 bg-[#6B8418] text-white rounded-xl w-[30%]">
           Save & Continue
