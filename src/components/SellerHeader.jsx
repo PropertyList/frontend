@@ -1,5 +1,8 @@
 import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+
 const SellerHeader = (props) => {
+  const { logout } = useAuth0();
   return (
     <nav
       className="
@@ -10,7 +13,11 @@ const SellerHeader = (props) => {
           BuyFraction
         </h2>
       </div>
-      <div>
+      <div className="flex flex-row justify-between ">
+      <button className="my-1 p-3 bg-[red] text-white rounded-xl w-[62%]" onClick={() => logout({ returnTo: window.location.origin })}
+        >LogOut
+        </button>
+        
         <img
           src={props.img}
           alt="profile-pic"

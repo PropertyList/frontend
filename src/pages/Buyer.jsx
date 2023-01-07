@@ -5,7 +5,7 @@ import Listings from "../components/MyListings";
 import { useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 
-const Seller = () => {
+const Buyer = () => {
   const navigate = useNavigate();
   const {user, isAuthenticated } = useAuth0();
   return (
@@ -22,16 +22,16 @@ const Seller = () => {
           {/* <h2 className="mx-auto text-[#0D1D54] font-semibold text-xl my-2">
             Tammy Hills
           </h2> */}
-          <h2 className="mx-auto text-[#404B7C] text-xl ">Seller</h2>
+          <h2 className="mx-auto text-[#404B7C] text-xl ">Buyer</h2>
           <h2 className="mx-auto text-[#0D1D54] font-semibold text-xl my-2">
-            Total Revenue
+            Total Profit
           </h2>
-          <h2 className="mx-auto text-[#404B7C] text-xl ">$100,000</h2>
+          <h2 className="mx-auto text-[#green] text-xl ">$100,000</h2>
         </div>
         <div className="basis-[77%]">
           <div className="flex flex-row justify-between my-10 px-10">
             <h2 className="text-[#0D1D54] font-semibold text-xl p-3 ">
-              Your Listings
+              Your Investments
             </h2>
             <button
               className=" p-3 bg-[#6B8418] text-white rounded-xl mr-5"
@@ -39,7 +39,7 @@ const Seller = () => {
                 navigate("/list");
               }}
             >
-              Create Listings +
+              Start Investing +
             </button>
           </div>
           <Listings />
@@ -49,4 +49,4 @@ const Seller = () => {
   );
 };
 
-export default Seller;
+export default Buyer;
