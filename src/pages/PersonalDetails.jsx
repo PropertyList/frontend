@@ -18,7 +18,7 @@ const PersonalDetails = () => {
         <input
           type="text"
           placeholder="Flat no / House no"
-          className="p-3 rounded-md outline-none"
+          className="shadow p-3 rounded-md outline-none"
         />
         <label className="text-[#404B7C] font-normal text-sm my-2">
           Line 2
@@ -26,7 +26,7 @@ const PersonalDetails = () => {
         <input
           type="text"
           placeholder="Street name / Building no / Plot no"
-          className="p-3 rounded-md outline-none"
+          className="shadow p-3 rounded-md outline-none"
         />
         <div className="flex flex-row justify-between my-2">
           <div className="flex flex-col basis-[45%]">
@@ -36,7 +36,7 @@ const PersonalDetails = () => {
             <input
               type="text"
               placeholder="Enter city name"
-              className="p-3 rounded-md outline-none"
+              className="shadow p-3 rounded-md outline-none"
             />
           </div>
           <div className="flex flex-col basis-[45%]">
@@ -46,7 +46,7 @@ const PersonalDetails = () => {
             <input
               type="text"
               placeholder="Flat no / House no"
-              className="p-3 rounded-md outline-none"
+              className="shadow p-3 rounded-md outline-none"
             />
           </div>
         </div>
@@ -58,7 +58,7 @@ const PersonalDetails = () => {
             <input
               type="text"
               placeholder="Enter country name"
-              className="p-3 rounded-md outline-none"
+              className="shadow p-3 rounded-md outline-none"
             />
           </div>
           <div className="flex flex-col basis-[45%]">
@@ -68,7 +68,7 @@ const PersonalDetails = () => {
             <input
               type="text"
               placeholder="Enter postal / zip code"
-              className="p-3 rounded-md outline-none"
+              className="shadow p-3 rounded-md outline-none"
             />
           </div>
         </div>
