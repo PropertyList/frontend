@@ -1,9 +1,27 @@
-import React from "react";
+import { useState } from "react";
 import CardImg from "../assets/kycImg.svg";
+import axios from "axios";
 import { Link, useParams, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const handleEmailVerification = () => {
+    axios
+      .post(
+        "https://api.apyhub.com/validate/email/dns",
+        { email },
+        {
+          headers: {
+            "apy-token":
+              "APT0sOYQKmgDDptQNnQatsLL9on0WG9pHawAFQ5ayIRBonGj3slCWxc",
+          },
+        }
+      )
+      .then((res) => {
+        console.log(res);
+      });
+  };
   let { id } = useParams();
   return (
     <div className="flex flex-row p-5 h-[100vh]">
@@ -53,11 +71,22 @@ const SignUp = () => {
           </div>
         </div>
         <label className="text-[#404B7C] font-normal text-sm my-2">Email</label>
-        <input
-          type="text"
-          placeholder="Your@email"
-          className="p-3 rounded-md outline-none shadow  w-[62%] focus:ring-1 ring-black"
-        />
+        <div className="flex flex-row">
+          <input
+            type="text"
+            placeholder="Your@email"
+            onChange={(e) => setEmail(e.target.value)}
+            className="p-3 rounded-md outline-none shadow  w-[62%] focus:ring-1 ring-black"
+          />
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              handleEmailVerification();
+            }}
+          >
+            Validate
+          </button>
+        </div>
         <label className="text-[#404B7C] font-normal text-sm my-2">
           Password
         </label>
