@@ -1,8 +1,16 @@
 import React from "react";
 import kycImg from "../assets/eth.svg";
 import { Link, useNavigate } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
+
 const MainLanding = () => {
+  const { isAuthenticated } = useAuth0();
   const navigate = useNavigate();
+  // check if user is authenticated then redirect to buy options page
+  if (isAuthenticated) {
+    navigate("/buyoptions");
+  }
+
   return (
     <div className="flex flex-row p-5 h-[100vh]">
       <div className=" rounded-sm basis-[30%] bg-[#6B8418] text-white flex flex-col p-5 leading-6">
