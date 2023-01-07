@@ -11,7 +11,7 @@ const AllProperties = () => {
     <div>
       <Header img={User} />
       <div className="flex flex-col p-7">
-        <h2 className="text-2xl font-semibold text-[#0D1D54] mt-4 mb-2 ">
+        <h2 className="text-2xl font-semibold text-[#0D1D54] mt-4 mb-4 ">
           Properties near you
         </h2>
         <Cards
@@ -21,7 +21,7 @@ const AllProperties = () => {
           est="$999"
           ownership="2%"
         />
-        <h2 className="text-2xl font-semibold text-[#0D1D54] my-2">
+        <h2 className="text-2xl font-semibold text-[#0D1D54] my-7 mt-5">
           Buy Home fractions
         </h2>
         <div className="flex flex-row ">
@@ -47,7 +47,7 @@ const AllProperties = () => {
             ownership="2%"
           />
         </div>
-        <h2 className="text-2xl font-semibold text-[#0D1D54] my-2">
+        <h2 className="text-2xl font-semibold text-[#0D1D54] my-7 mt-5">
           Invest Togther
         </h2>
         <Cards
