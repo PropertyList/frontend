@@ -7,6 +7,7 @@ import Login from "./Login";
 import NotFound from "./404";
 import BuyOptions from "./BuyOptions";
 import Seller from "./Seller";
+import ListProperty from "./ListProperty";
 const Index = () => {
   return (
     <BrowserRouter>
@@ -18,6 +19,7 @@ const Index = () => {
         <Route path="/login/:id" element={<Login />} />
         <Route path="/*" element={<NotFound />} />
         <Route path="/seller" element={<Seller />} />
+        <Route path="/list" element={<ListProperty />} />
         <Route path="/buyoptions" element={<BuyOptions />} />
       </Routes>
     </BrowserRouter>
