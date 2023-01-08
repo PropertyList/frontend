@@ -17,7 +17,8 @@ const AllProperties = () => {
         <Cards
           img={H1}
           name="NYC property"
-          price="$22,000"
+          price={22000}
+          raised={10000}
           est="$999"
           ownership="2%"
         />
@@ -28,21 +29,24 @@ const AllProperties = () => {
           <Cards
             img={H2}
             name="NYC property"
-            price="$22,000"
+            price={92000}
+            raised={50000}
             est="$999"
             ownership="2%"
           />
           <Cards
             img={H3}
             name="NYC property"
-            price="$22,000"
+            price={25000}
+            raised={15000}
             est="$999"
             ownership="2%"
           />
           <Cards
             img={H1}
             name="NYC property"
-            price="$22,000"
+            price={22900}
+            raised={19000}
             est="$999"
             ownership="2%"
           />
@@ -53,7 +57,8 @@ const AllProperties = () => {
         <Cards
           img={H3}
           name="NYC property"
-          price="$22,000"
+          price={62000}
+          raised={10600}
           est="$999"
           ownership="2%"
         />
