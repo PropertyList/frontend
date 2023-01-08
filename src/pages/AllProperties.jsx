@@ -17,8 +17,7 @@ const AllProperties = () => {
         <Cards
           img={H1}
           name="NYC property"
-          price={22000}
-          raised={10000}
+          price="$22,000"
           est="$999"
           ownership="2%"
         />
@@ -29,36 +28,32 @@ const AllProperties = () => {
           <Cards
             img={H2}
             name="NYC property"
-            price={92000}
-            raised={50000}
+            price="$22,000"
             est="$999"
             ownership="2%"
           />
           <Cards
             img={H3}
             name="NYC property"
-            price={25000}
-            raised={15000}
+            price="$22,000"
             est="$999"
             ownership="2%"
           />
           <Cards
             img={H1}
             name="NYC property"
-            price={22900}
-            raised={19000}
+            price="$22,000"
             est="$999"
             ownership="2%"
           />
         </div>
-        <h2 className="text-2xl font-semibold text-[#0D1D54] my-7 mt-5">
+        <h2 className="text-2xl font-semibold text-[#0D1D54] my-2">
           Invest Togther
         </h2>
         <Cards
           img={H3}
           name="NYC property"
-          price={62000}
-          raised={10600}
+          price="$22,000"
           est="$999"
           ownership="2%"
         />
