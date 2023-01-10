@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Split Estate
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![hackathon-banner](https://user-images.githubusercontent.com/64047505/211547252-65a4dfa7-40df-44db-b181-570d2067c750.png)
 
-## Available Scripts
 
-In the project directory, you can run:
+## About
 
-### `npm start`
+### Participants
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| Name            | Github                                         | Discord         |
+| --------------- | ---------------------------------------------- | --------------- |
+| Pratham Singhal | [@Pratham-19](https://github.com/Pratham-19)   | Pratham#7898    |
+| Ritek Rounak    | [@RITEKROUNAK](https://github.com/RITEKROUNAK) | cracker505#5352 |
+| Chandra Bose P  | [@chandrabosep](https://github.com/chandrabosep) | chandra bose.p#0281|
+| Joshua Porporino | [@JoshWeb3](https://github.com/JoshWeb3) | yesh#0001 |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Description
+## The problem Split Estate solves
+Our project aims to solve several problems by creating a blockchain-based platform for buying and selling fractions of apartment complexes. The first problem we tackle is the complexity and inconvenience of traditional methods for dividing and transferring ownership of properties. Our platform simplifies the process, allowing anyone to easily buy and sell shares in apartment complexes with just a few clicks.
 
-### `npm test`
+In addition to streamlining the buying and selling process, our platform also addresses issues of security and transparency. By using a blockchain, we are able to record all transactions on a secure, decentralized ledger that is nearly immune to manipulation. This not only protects the interests of investors, but also helps to build trust in the platform.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Smart contracts also help to automate certain processes, such as rent collection and distribution of profits, which saves time and effort and reduces the risk of errors or misunderstandings.
 
-### `npm run build`
+Overall, our platform has the potential to revolutionize the way that people invest in real estate. By making it easy for anyone to become a landlord, we are opening up new opportunities for individuals to build wealth and achieve financial independence. And with the increased liquidity provided by our marketplace, investors will have more flexibility to buy and sell shares as their needs and circumstances change.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Preview
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+https://user-images.githubusercontent.com/64047505/211548887-c611e7df-2227-4b22-995d-110032df3529.mp4
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Set up Project
+Here's how to setup and run the project locally :
 
-## Learn More
+### Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Here are some pre-requisites that you may require to run the project on your system.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Node (https://node.org/).
+- ReactJs (https://reactjs.org/).
 
-### Code Splitting
+### Install Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Done with the pre-requisites?
 
-### Analyzing the Bundle Size
+Here are the steps to be taken after that :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+1. Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+git clone https://github.com/PropertyList/frontend.git
+```
 
-### Advanced Configuration
+2. Change directory :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+cd frontend
+```
+3. Install dependencies :
 
-### Deployment
+```bash
+npm install
+  or
+yarn install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+4. Run 
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm run start
+  or
+yarn run
+````
